@@ -63,7 +63,7 @@ canvas#wave{display:block;width:100%;height:96px;margin-top:8px;opacity:.5}
 .mod h3{font-size:14.5px;font-weight:800;color:var(--ink);margin-bottom:6px}
 .mod p{font-size:13px;color:var(--muted);line-height:1.55}
 .mod-tip{margin-top:12px;padding:8px 11px;background:var(--off);border-radius:8px;font-size:12px;color:var(--accent-text);font-weight:600}
-.mod.accent{border-left-color:var(--mint);background:linear-gradient(135deg,#f0fdf9,var(--white))}
+.mod.accent{border-left-color:var(--mint);background:linear-gradient(135deg,var(--off),var(--white))}
 .mod.accent .mod-icon{background:rgba(127,227,200,.2)}
 
 .flow{background:var(--off);padding:72px 24px}
@@ -116,12 +116,10 @@ canvas#wave{display:block;width:100%;height:96px;margin-top:8px;opacity:.5}
   :root{--white:#0d1c19;--off:#0f2420;--ink:#cce5df;--muted:#6ba399;--border:#1e3830;--accent-text:var(--mint)}
   body{background:var(--white)}
   .mod{background:var(--white)}
-  .mod.accent{background:linear-gradient(135deg,#0f2824,var(--white))}
   .flow-item{border-bottom-color:var(--border)}
   h2,h3,h4,.step h3{color:var(--ink)}
 }
 :root[data-theme="dark"]{--white:#0d1c19;--off:#0f2420;--ink:#cce5df;--muted:#6ba399;--border:#1e3830;--accent-text:var(--mint)}
-:root[data-theme="dark"] .mod.accent{background:linear-gradient(135deg,#0f2824,#0d1c19)}
 :root[data-theme="light"]{--white:#fff;--off:#f7faf9;--ink:#0c1e1a;--muted:#607a74;--border:#ddeae6;--accent-text:var(--brand)}
 </style>
 <script>
@@ -173,7 +171,7 @@ document.addEventListener('DOMContentLoaded', ()=> setTimeout(window.__initWave,
   <div class="hero-inner">
     <div class="hero-badge"><span class="hero-badge-dot"></span>Acesso Beta — Versão de Testes</div>
     <h1>Consulta mais<br>rápida. <span>Sem abrir<br>mão da clínica.</span></h1>
-    <p class="lead">O SOAPerando transforma sua fala em SOAP completo, em tempo real, direto da beira do leito — paralelo ao PEC, sem integrações, sem burocracia adicional.</p>
+    <p class="lead">O SOAPerando transforma sua fala em SOAP completo, em tempo real, direto no atendimento — paralelo ao PEC, sem integrações, sem burocracia adicional.</p>
   </div>
   <canvas id="wave"></canvas>
 </header>
